@@ -18,6 +18,35 @@ body[data-slug^="Writing/"] {
   display: none;
 }
 
+// Explorer + Nav: uniform body-weight text, no bold, consistent sizing
+// Folder names (button variant and link variant)
+.folder-container div > button,
+.folder-container div > button span,
+.folder-container div > a {
+  font-family: var(--bodyFont);
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+// Note file links — override the default dark+opacity treatment
+.explorer-content ul li > a {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #444;
+  opacity: 1;
+
+  &.active {
+    color: var(--secondary);
+  }
+}
+
+// Memos nav link — match sidebar text weight and colour
+.site-nav a {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #444;
+}
+
 // Minimal footer
 footer p {
   font-size: 0.75rem;
