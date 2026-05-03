@@ -13,6 +13,11 @@ body[data-slug^="Writing/"] {
   }
 }
 
+// Hide Explorer toggle button — show folder tree directly with no heading
+.explorer button.desktop-explorer {
+  display: none;
+}
+
 // Minimal footer
 footer p {
   font-size: 0.75rem;
