@@ -63,6 +63,21 @@ ul.toc-content.overflow > li > a {
   }
 }
 
+// Explorer: hide fold chevron — folders have no children, they navigate directly
+.left.sidebar .folder-icon {
+  display: none;
+}
+
+// Folder index listing: title first, date after (small, de-emphasised)
+// Default listPage.scss grid is [date | title | tags]; swap to [title | date | tags]
+li.section-li > .section {
+  grid-template-columns: 3fr fit-content(8em) 1fr;
+
+  > .desc { grid-column: 1; }
+  > .meta { grid-column: 2; }
+  > .tags { grid-column: 3; }
+}
+
 // Minimal footer
 footer p {
   font-size: 0.75rem;

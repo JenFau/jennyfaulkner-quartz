@@ -36,7 +36,10 @@ export const defaultContentPageLayout: PageLayout = {
       ],
     }),
     Nav(),
-    Component.DesktopOnly(Component.Explorer()),
+    Component.DesktopOnly(Component.Explorer({
+      filterFn: (node) => node.isFolder && (node.slugSegment === "Notes" || node.slugSegment === "Writing"),
+      folderClickBehavior: "link",
+    })),
   ],
   right: [
     Component.ConditionalRender({
@@ -70,7 +73,10 @@ export const defaultListPageLayout: PageLayout = {
       ],
     }),
     Nav(),
-    Component.DesktopOnly(Component.Explorer()),
+    Component.DesktopOnly(Component.Explorer({
+      filterFn: (node) => node.isFolder && (node.slugSegment === "Notes" || node.slugSegment === "Writing"),
+      folderClickBehavior: "link",
+    })),
   ],
   right: [],
 }
