@@ -68,6 +68,29 @@ ul.toc-content.overflow > li > a {
   display: none;
 }
 
+// Folder index listing: sub-folder links (categories) vs note links (destinations)
+// PageList.tsx adds .is-folder to folder slugs; isFolderPath strips trailing slash
+// from hrefs so we can't use [href$="/"] — class is the only reliable signal.
+.section-li .section .desc a.is-folder {
+  color: var(--gray);
+
+  &::before {
+    content: "›\00a0";
+  }
+
+  &:hover {
+    color: var(--secondary);
+  }
+}
+
+.section-li .section .desc a.internal:not(.is-folder) {
+  color: var(--darkgray);
+
+  &:hover {
+    color: var(--secondary);
+  }
+}
+
 // Folder index listing: hide date, compact spacing
 li.section-li > .section > .meta {
   display: none;
