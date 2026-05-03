@@ -47,6 +47,20 @@ body[data-slug^="Writing/"] {
   color: #444;
 }
 
+// Table of Contents — regular weight, flat #444, terracotta for active section
+ul.toc-content.overflow > li > a {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #444;
+  opacity: 1;
+  transition: color 0.2s ease;
+
+  &.in-view {
+    color: var(--secondary);
+    opacity: 1;
+  }
+}
+
 // Minimal footer
 footer p {
   font-size: 0.75rem;
