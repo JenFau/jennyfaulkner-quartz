@@ -68,14 +68,17 @@ ul.toc-content.overflow > li > a {
   display: none;
 }
 
-// Folder index listing: title first, date after (small, de-emphasised)
-// Default listPage.scss grid is [date | title | tags]; swap to [title | date | tags]
-li.section-li > .section {
-  grid-template-columns: 3fr fit-content(8em) 1fr;
+// Folder index listing: hide date, compact spacing
+li.section-li > .section > .meta {
+  display: none;
+}
 
-  > .desc { grid-column: 1; }
-  > .meta { grid-column: 2; }
-  > .tags { grid-column: 3; }
+li.section-li > .section {
+  grid-template-columns: 1fr;
+}
+
+li.section-li {
+  margin-bottom: 0.25em;
 }
 
 // Minimal footer
