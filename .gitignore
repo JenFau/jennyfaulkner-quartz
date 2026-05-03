@@ -9,3 +9,9 @@ tsconfig.tsbuildinfo
 private/
 .replit
 replit.nix
+
+# Vault-only folders that should never be committed
+content/@meta/
+content/Attachments/
+content/Bases/
+content/gemini-scribe/

@@ -1,14 +1,9 @@
 import { QuartzConfig } from "./quartz/cfg"
 import * as Plugin from "./quartz/plugins"
 
-/**
- * Quartz 4 Configuration
- *
- * See https://quartz.jzhao.xyz/configuration for more information.
- */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "Quartz 4",
+    pageTitle: "Jenny Faulkner",
     pageTitleSuffix: "",
     enableSPA: true,
     enablePopovers: true,
@@ -16,38 +11,46 @@ const config: QuartzConfig = {
       provider: "plausible",
     },
     locale: "en-US",
-    baseUrl: "quartz.jzhao.xyz",
-    ignorePatterns: ["private", "templates", ".obsidian"],
+    baseUrl: "jennyfaulkner.com",
+    ignorePatterns: [
+      "private",
+      "templates",
+      ".obsidian",
+      "@meta",
+      "Attachments",
+      "Bases",
+      "gemini-scribe",
+    ],
     defaultDateType: "modified",
     theme: {
       fontOrigin: "googleFonts",
       cdnCaching: true,
       typography: {
-        header: "Schibsted Grotesk",
-        body: "Source Sans Pro",
-        code: "IBM Plex Mono",
+        header: "Clash Display",
+        body: "Cabinet Grotesk",
+        code: "JetBrains Mono",
       },
       colors: {
         lightMode: {
-          light: "#faf8f8",
-          lightgray: "#e5e5e5",
-          gray: "#b8b8b8",
-          darkgray: "#4e4e4e",
-          dark: "#2b2b2b",
-          secondary: "#284b63",
-          tertiary: "#84a59d",
-          highlight: "rgba(143, 159, 169, 0.15)",
+          light: "#ffffff",
+          lightgray: "#e8e8e8",
+          gray: "#aaaaaa",
+          darkgray: "#444444",
+          dark: "#111111",
+          secondary: "#C4622D",
+          tertiary: "#d4834d",
+          highlight: "rgba(196, 98, 45, 0.08)",
           textHighlight: "#fff23688",
         },
         darkMode: {
-          light: "#161618",
-          lightgray: "#393639",
-          gray: "#646464",
-          darkgray: "#d4d4d4",
-          dark: "#ebebec",
-          secondary: "#7b97aa",
-          tertiary: "#84a59d",
-          highlight: "rgba(143, 159, 169, 0.15)",
+          light: "#1a1a1a",
+          lightgray: "#2a2a2a",
+          gray: "#666666",
+          darkgray: "#cccccc",
+          dark: "#f0f0f0",
+          secondary: "#d4834d",
+          tertiary: "#C4622D",
+          highlight: "rgba(196, 98, 45, 0.12)",
           textHighlight: "#b3aa0288",
         },
       },
@@ -73,7 +76,7 @@ const config: QuartzConfig = {
       Plugin.Description(),
       Plugin.Latex({ renderEngine: "katex" }),
     ],
-    filters: [Plugin.RemoveDrafts()],
+    filters: [Plugin.ExplicitPublish()],
     emitters: [
       Plugin.AliasRedirects(),
       Plugin.ComponentResources(),
@@ -88,8 +91,8 @@ const config: QuartzConfig = {
       Plugin.Static(),
       Plugin.Favicon(),
       Plugin.NotFoundPage(),
-      // Comment out CustomOgImages to speed up build time
-      Plugin.CustomOgImages(),
+      // CustomOgImages requires fonts on Google Fonts; disabled for Fontshare-based design
+      // Plugin.CustomOgImages(),
     ],
   },
 }
