@@ -13,22 +13,25 @@ body[data-slug^="Writing/"] .center article {
 }
 
 // Hide Explorer toggle button — show folder tree directly with no heading
-.explorer button.desktop-explorer {
+// .left.sidebar prefix raises specificity above explorer.scss defaults so
+// the rule survives SPA navigation re-injection of component styles.
+.left.sidebar .explorer button.desktop-explorer {
   display: none;
 }
 
 // Explorer + Nav: uniform body-weight text, no bold, consistent sizing
 // Folder names (button variant and link variant)
-.folder-container div > button,
-.folder-container div > button span,
-.folder-container div > a {
+// Higher specificity (.left.sidebar prefix) wins over explorer.scss after SPA route changes.
+.left.sidebar .folder-container div > button,
+.left.sidebar .folder-container div > button span,
+.left.sidebar .folder-container div > a {
   font-family: var(--bodyFont);
   font-size: 1rem;
   font-weight: 400;
 }
 
 // Note file links — override the default dark+opacity treatment
-.explorer-content ul li > a {
+.left.sidebar .explorer-content ul li > a {
   font-size: 1rem;
   font-weight: 400;
   color: #444;
