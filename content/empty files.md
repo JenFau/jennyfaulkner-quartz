@@ -1,2 +1,0 @@
-- [[@meta/Templates/Garden Note Template.md]]
-- [[@meta/Templates/Course Template.md]]
