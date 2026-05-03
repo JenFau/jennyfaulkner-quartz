@@ -36,6 +36,7 @@ export const defaultContentPageLayout: PageLayout = {
       ],
     }),
     Nav(),
+    Component.DesktopOnly(Component.Explorer()),
   ],
   right: [
     Component.ConditionalRender({
@@ -69,6 +70,7 @@ export const defaultListPageLayout: PageLayout = {
       ],
     }),
     Nav(),
+    Component.DesktopOnly(Component.Explorer()),
   ],
   right: [],
 }
