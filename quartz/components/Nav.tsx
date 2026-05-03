@@ -3,10 +3,8 @@ import { QuartzComponent, QuartzComponentConstructor } from "./types"
 const Nav: QuartzComponent = () => {
   return (
     <nav class="site-nav">
-      <a href="/Writing">Writing</a>
-      <a href="/Notes">Notes</a>
-      <a href="https://thoughts.jennyfaulkner.com/" target="_blank" rel="noopener noreferrer">
-        Memos
+      <a href="https://thoughts.jennyfaulkner.com/explore" target="_blank" rel="noopener noreferrer">
+        Memos ↗
       </a>
     </nav>
   )
