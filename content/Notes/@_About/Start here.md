@@ -27,13 +27,20 @@ _Note: due to work commitments, I've not been able to keep this as up to date as
 ## Key
 
 **Header prefixes**
+
 ⚠️ Note needs updating: errors identified or major updates required
+
 🌱 Note is a 'seedling': needs attention to develop into a useful note
+
 🌿 Note is growing: fairly robust
+
 🌳 Note is mature: stable and well developed
+
 🫙 Empty note (placeholder)
+
 📍 Note is a Map of Contents or overview page
 
 **In-note markers**
 ⏰ A point that needs expanding
+
 ❓A raised question to return to
