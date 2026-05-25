@@ -20,7 +20,6 @@ _Note: due to work commitments, I've not been able to keep this as up to date as
 - [[📍 Productivity and tools]]
 - [[📍 Human skills]]
 - [[📍 Creativity]]
-- [[📍 Other]]
 
 ---
 
@@ -39,3 +38,5 @@ _Note: due to work commitments, I've not been able to keep this as up to date as
 
 - ⏰ A point that needs expanding
 - ❓A raised question to return to
+
+![[Test.base]]
