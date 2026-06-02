@@ -81,7 +81,8 @@ const config: QuartzConfig = {
       Plugin.AliasRedirects(),
       Plugin.ComponentResources(),
       Plugin.ContentPage(),
-      Plugin.FolderPage(),
+      Plugin.CustomFolderPage({ skipFolders: ["Learning"] }),
+      Plugin.StaticHtmlPage({ source: "learning-roadmap.html", destination: "Learning/index" }),
       Plugin.TagPage(),
       Plugin.ContentIndex({
         enableSiteMap: true,

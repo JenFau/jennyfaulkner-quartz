@@ -61,18 +61,8 @@ export const defaultContentPageLayout: PageLayout = {
 export const defaultListPageLayout: PageLayout = {
   beforeBody: [
     Component.Breadcrumbs(),
-    Component.ConditionalRender({
-      component: Component.ArticleTitle(),
-      condition: (page) => page.fileData.slug !== "Learning/index",
-    }),
-    Component.ConditionalRender({
-      component: Component.ContentMeta(),
-      condition: (page) => page.fileData.slug !== "Learning/index",
-    }),
-    Component.ConditionalRender({
-      component: Component.AIRoadmap(),
-      condition: (page) => page.fileData.slug === "Learning/index",
-    }),
+    Component.ArticleTitle(),
+    Component.ContentMeta(),
   ],
   left: [
     Component.PageTitle(),
