@@ -368,6 +368,18 @@
       font-style: italic;
     }
 
+    .ic-link {
+      display: inline-block;
+      margin-top: 10px;
+      font-family: "JetBrains Mono", monospace;
+      font-size: 11px;
+      color: var(--pc);
+      text-decoration: none;
+      letter-spacing: 0.03em;
+    }
+
+    .ic-link:hover { text-decoration: underline; }
+
     /* ── Skills ── */
     .skills-section { border-top: 1.5px solid var(--border); padding-top: 24px; }
 
@@ -634,7 +646,9 @@ function chipHtml(item) {
 
 function renderPhasePanel(p, pi) {
   var allItems = [];
-  p.tracks.forEach(function (t) { t.items.forEach(function (i) { allItems.push(i); }); });
+  p.tracks.forEach(function (t) {
+    if (t.name !== "Milestones") { t.items.forEach(function (i) { allItems.push(i); }); }
+  });
   var skills = dedup(allItems);
 
   var trackBtns = p.tracks.map(function (t, ti) {
@@ -644,6 +658,9 @@ function renderPhasePanel(p, pi) {
   var trackPanels = p.tracks.map(function (t, ti) {
     var items = t.items.map(function (item, ii) {
       var n = String(ii + 1).length === 1 ? "0" + (ii + 1) : String(ii + 1);
+      var notesLink = linkedSkills[item.title]
+        ? "<a href=\"" + linkedSkills[item.title] + "\" class=\"ic-link\">View my notes →</a>"
+        : "";
       return [
         "<div class=\"item-card\" data-item=\"" + ii + "\">",
           "<div class=\"ic-header\">",
@@ -653,7 +670,7 @@ function renderPhasePanel(p, pi) {
             "</div>",
             "<span class=\"ic-toggle\">+</span>",
           "</div>",
-          "<div class=\"ic-detail\"><p>" + esc(item.detail) + "</p></div>",
+          "<div class=\"ic-detail\"><p>" + esc(item.detail) + "</p>" + notesLink + "</div>",
         "</div>"
       ].join("");
     }).join("");
@@ -672,7 +689,6 @@ function renderPhasePanel(p, pi) {
         "<div class=\"ph-info\">",
           "<div class=\"ph-title-row\">",
             "<h2 class=\"ph-title\">" + esc(p.title) + "</h2>",
-            "<span class=\"ph-badge\">" + esc(p.duration) + "</span>",
           "</div>",
           "<p class=\"ph-summary\">" + esc(p.summary) + "</p>",
         "</div>",
@@ -694,7 +710,6 @@ function render() {
       "<button class=\"phase-btn" + (i === 0 ? " active" : "") + "\" data-phase=\"" + i + "\" " + style + ">",
         "<div class=\"pb-label\">" + esc(p.label) + "</div>",
         "<div class=\"pb-title\">" + esc(p.title) + "</div>",
-        "<div class=\"pb-duration\">" + esc(p.duration) + "</div>",
         "<div class=\"pb-bar\"></div>",
       "</button>"
     ].join("");
@@ -714,8 +729,8 @@ function render() {
 
   // ── Interactivity ──
   document.getElementById("roadmap").addEventListener("click", function (e) {
-    // Let skill-chip anchor clicks pass through normally
-    if (e.target.closest("a.skill-chip")) return;
+    // Let skill-chip and ic-link anchor clicks pass through normally
+    if (e.target.closest("a.skill-chip") || e.target.closest("a.ic-link")) return;
 
     // Phase button
     var phaseBtn = e.target.closest(".phase-btn");
