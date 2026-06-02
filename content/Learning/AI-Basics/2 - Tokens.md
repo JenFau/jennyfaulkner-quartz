@@ -1,8 +1,8 @@
 ---
 publish: true
-title: Tokens
+title: 2 - Tokens
 created: 2026-06-02T21:19:53.957+01:00
-modified: 2026-06-02T21:31:14.706+01:00
+modified: 2026-06-02T21:44:24.230+01:00
 ---
 
 A token is a chunk of text but not necessarily a word. It might be a whole word, or it might be a syllable or just a few characters. The word ‘cat’ is likely to be treated as just one token, but the word ‘caterpillar’ might be split into two or three. Or, it might be treated as one token - very familiar words are not necessarily split into chunks in the same way as less common ones. Other things to know: different spellings of the same word (think of the difference between the British ‘realise’ and the US ‘realize’) might be handled differently. Punctuation marks are often tokens in their own right, whereas a single space might be part of a token, or might be a token in itself.
