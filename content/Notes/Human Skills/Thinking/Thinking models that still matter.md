@@ -3,8 +3,8 @@ publish: true
 created: 2025-06-12
 modified: 2025-10-27
 tags:
-  - "#AI"
-  - "#Thinking"
+  - AI
+  - Thinking
 ---
 
 Despite huge advances in capability, [[🌱 What AI Can Do (and What It Can’t)|AI still has Limitations on what it can do.]] As the use of AI grows, the need for human-specific thinking becomes increasingly important. However, there is a shift in the type of thinking that we need to excel at to effectively work with AI (see: [[The decline of linear (or analytical) thinking]])

@@ -3,8 +3,8 @@ publish: true
 created: 2025-06-12
 modified: 2025-11-29
 tags:
-  - "#AI"
-  - "#Thinking"
+  - AI
+  - Thinking
 ---
 
 Do human skills still matter in an AI world?

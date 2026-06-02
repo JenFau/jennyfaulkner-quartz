@@ -3,9 +3,9 @@ publish: true
 created: 2025-06-12
 modified: 2025-10-27
 tags:
-  - "#AI"
-  - "#GenAI"
-  - "#AgenticAI"
+  - AI
+  - GenAI
+  - AgenticAI
 ---
 
 ## Overview
