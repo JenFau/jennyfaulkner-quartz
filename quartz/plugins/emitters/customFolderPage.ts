@@ -107,7 +107,7 @@ export const CustomFolderPage: QuartzEmitterPlugin<Partial<CustomFolderPageOptio
   const opts: FullPageLayout = {
     ...sharedPageComponents,
     ...defaultListPageLayout,
-    pageBody: FolderContent({ sort: userOpts?.sort }),
+    pageBody: FolderContent({ sort: userOpts?.sort, showFolderCount: false }),
     ...userOpts,
   }
 
