@@ -24,36 +24,39 @@
 
     /* ── Colour tokens ── */
     :root {
-      --bg:     #ffffff;
-      --text:   #111111;
-      --accent: #C4622D;
-      --border: #e8e8e8;
-      --muted:  #aaaaaa;
-      --card:   #ffffff;
-      --subtle: #f5f5f5;
+      --bg:          #ffffff;
+      --text:        #111111;
+      --accent:      #C4622D;
+      --border:      #e8e8e8;
+      --border-item: #e8e8e8;
+      --muted:       #aaaaaa;
+      --card:        #ffffff;
+      --subtle:      #f5f5f5;
     }
 
     /* Dark mode — set by early-JS reading Quartz's localStorage key */
     [data-theme="dark"] {
-      --bg:     #1a1a1a;
-      --text:   #f0f0f0;
-      --accent: #d4834d;
-      --border: #2a2a2a;
-      --muted:  #666666;
-      --card:   #222222;
-      --subtle: #242424;
+      --bg:          #1a1a1a;
+      --text:        #f0f0f0;
+      --accent:      #d4834d;
+      --border:      #444444;
+      --border-item: #3a3a3a;
+      --muted:       #aaaaaa;
+      --card:        #2a2a2a;
+      --subtle:      #242424;
     }
 
     /* OS-level fallback when no Quartz theme is saved */
     @media (prefers-color-scheme: dark) {
       :root:not([data-theme="light"]) {
-        --bg:     #1a1a1a;
-        --text:   #f0f0f0;
-        --accent: #d4834d;
-        --border: #2a2a2a;
-        --muted:  #666666;
-        --card:   #222222;
-        --subtle: #242424;
+        --bg:          #1a1a1a;
+        --text:        #f0f0f0;
+        --accent:      #d4834d;
+        --border:      #444444;
+        --border-item: #3a3a3a;
+        --muted:       #aaaaaa;
+        --card:        #2a2a2a;
+        --subtle:      #242424;
       }
     }
 
@@ -300,11 +303,11 @@
 
     /* ── Item cards ── */
     .item-card {
-      border: 1.5px solid var(--border);
+      border: 1.5px solid var(--border-item);
       border-radius: 8px;
       overflow: hidden;
       cursor: pointer;
-      background: var(--card);
+      background: var(--subtle);
       transition: border-color 0.15s, box-shadow 0.15s;
     }
 
@@ -758,6 +761,28 @@ function render() {
 }
 
 render();
+
+// ── Theme sync ──
+// Quartz stores the chosen theme in localStorage["theme"] and sets
+// saved-theme on <html>. Since this page is standalone (not Quartz SPA),
+// we listen for storage events (other tab toggles) and OS preference
+// changes so the roadmap stays in sync.
+function applyTheme(theme) {
+  document.documentElement.dataset.theme = theme;
+}
+
+window.addEventListener("storage", function (e) {
+  if (e.key === "theme" && (e.newValue === "dark" || e.newValue === "light")) {
+    applyTheme(e.newValue);
+  }
+});
+
+window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", function (e) {
+  // Only follow OS if the user hasn't explicitly chosen a theme in Quartz
+  if (!localStorage.getItem("theme")) {
+    applyTheme(e.matches ? "dark" : "light");
+  }
+});
 </script>
 
 </body>
