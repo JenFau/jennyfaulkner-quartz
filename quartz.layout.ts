@@ -37,14 +37,14 @@ export const defaultContentPageLayout: PageLayout = {
     }),
     Nav(),
     Component.DesktopOnly(Component.Explorer({
-      filterFn: (node) => node.isFolder && (node.slugSegment === "Notes" || node.slugSegment === "Writing"),
+      filterFn: (node) => node.isFolder && (node.slugSegment === "Notes" || node.slugSegment === "Writing" || node.slugSegment === "Learning"),
       folderClickBehavior: "link",
     })),
   ],
   right: [
     Component.ConditionalRender({
       component: Component.DesktopOnly(Component.TableOfContents()),
-      condition: (page) => page.fileData.slug?.startsWith("Writing/") ?? false,
+      condition: (page) => (page.fileData.slug?.startsWith("Writing/") || page.fileData.slug?.startsWith("Learning/")) ?? false,
     }),
     Component.ConditionalRender({
       component: Component.Graph(),
@@ -74,7 +74,7 @@ export const defaultListPageLayout: PageLayout = {
     }),
     Nav(),
     Component.DesktopOnly(Component.Explorer({
-      filterFn: (node) => node.isFolder && (node.slugSegment === "Notes" || node.slugSegment === "Writing"),
+      filterFn: (node) => node.isFolder && (node.slugSegment === "Notes" || node.slugSegment === "Writing" || node.slugSegment === "Learning"),
       folderClickBehavior: "link",
     })),
   ],
