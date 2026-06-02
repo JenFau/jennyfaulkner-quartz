@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-05-03T16:55:48.898+01:00
-modified: 2026-05-03T16:55:48.898+01:00
+modified: 2026-06-02T21:48:31.122+01:00
 ---
 
 In supervised learning, models are trained on labeled data, meaning the input data is paired with the correct output. The goal is to learn a mapping function to predict labels for new, unseen data.
@@ -23,7 +23,7 @@ Classification predicts categorical labels (class membership), such as determini
 - **Decision Trees:** A flowchart-like structure where internal nodes represent tests on features and leaf nodes represent class labels. They are interpretable but prone to overfitting unless pruned,.
 - **Support Vector Machines (SVM):** Finds a hyperplane that maximizes the margin (distance) between two classes. It is effective in high-dimensional spaces,.
 - **Ensemble Models:** Combine multiple models to improve performance. **Random Forest** uses "bagging" (averaging multiple decision trees) to reduce variance. **XGBoost** uses "boosting" to sequentially correct errors of weak learners.
-  Note that, at least in some circumstances, it is possible to undertake [[🌱 Classification with Python and OpenAI]] rather than training a ML model.
+  Note that, at least in some circumstances, it is possible to undertake [[Classification with Python and OpenAI]] rather than training a ML model.
 
 ## Bias and Variance
 

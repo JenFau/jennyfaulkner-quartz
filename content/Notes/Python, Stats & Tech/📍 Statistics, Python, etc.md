@@ -11,9 +11,9 @@ modified: 2025-10-27
 # Python
 
 [[Python for Data Science Cheat Sheet (PDF)]]
-[[🌿 Using OpenAI with Python]]
-[[🌱 Classification with Python and OpenAI]]
-[[🌱 Moderation with OpenAI and Python]]
+[[Using OpenAI with Python]]
+[[Classification with Python and OpenAI]]
+[[Moderation with OpenAI and Python]]
 [[🌱 Python collections and flow]]
 
 # Google
