@@ -1,8 +1,8 @@
 ---
 publish: true
-title: Parameters
+title: 3 - Parameters
 created: 2026-06-02T21:24:19.353+01:00
-modified: 2026-06-02T21:27:37.105+01:00
+modified: 2026-06-02T21:29:02.008+01:00
 ---
 
 We have seen that AI is, at its core, simply a [[1 - Prediction Machines|prediction machine]] and that it works on chunks of text called [[2 - Tokens|tokens]]. But how do these two things work together? The answer lies in the concept of parameters.
