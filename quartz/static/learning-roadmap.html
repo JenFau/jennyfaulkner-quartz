@@ -453,10 +453,9 @@ var phases = [
       {
         name: "Technical Core",
         items: [
-          { title: "Python",           detail: "Start with analytical scripting (NumPy, Pandas) and progress to production-grade code: classes, async/await, type hints, packaging, testing. Not just notebooks." },
-          { title: "ML fundamentals",  detail: "Supervised/unsupervised learning, model evaluation, bias/variance tradeoff. Andrew Ng’s courses are the gold standard." },
-          { title: "LLM literacy",     detail: "Understand transformers conceptually. Read ‘Attention Is All You Need’. Know what tokenization, fine-tuning, and RLHF mean." },
-          { title: "AI tooling",       detail: "Hands-on: OpenAI API, LangChain, vector databases (Pinecone/Weaviate), basic RAG pipelines." }
+          { title: "Python",    detail: "Start with analytical scripting (NumPy, Pandas) and progress to production-grade code: classes, async/await, type hints, packaging, testing. Not just notebooks." },
+          { title: "AI basics", detail: "Core ML concepts — supervised/unsupervised learning, model evaluation, bias/variance tradeoff — plus transformer fundamentals: tokenization, fine-tuning, and RLHF. Andrew Ng for ML grounding; ‘Attention Is All You Need’ for the transformer intuition." },
+          { title: "AI tooling", detail: "Hands-on: OpenAI API, LangChain, vector databases (Pinecone/Weaviate), basic RAG pipelines." }
         ]
       },
       {
@@ -619,8 +618,8 @@ var phases = [
 
 // Skills with corresponding vault pages get <a> tags; all others stay <span>
 var linkedSkills = {
-  "Python":      "/Learning/Python/",
-  "LLM literacy": "/Learning/LLMs/"
+  "Python":    "/Learning/Python/",
+  "ML theory": "/Learning/LLMs/"
 };
 
 function esc(s) {
