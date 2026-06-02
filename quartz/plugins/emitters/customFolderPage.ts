@@ -104,10 +104,15 @@ export const CustomFolderPage: QuartzEmitterPlugin<Partial<CustomFolderPageOptio
   userOpts,
 ) => {
   const skipFolders = userOpts?.skipFolders ?? []
+  const alphabeticalSort = (f1: QuartzPluginData, f2: QuartzPluginData) => {
+    const t1 = f1.frontmatter?.title.toLowerCase() ?? ""
+    const t2 = f2.frontmatter?.title.toLowerCase() ?? ""
+    return t1.localeCompare(t2)
+  }
   const opts: FullPageLayout = {
     ...sharedPageComponents,
     ...defaultListPageLayout,
-    pageBody: FolderContent({ sort: userOpts?.sort, showFolderCount: false }),
+    pageBody: FolderContent({ sort: userOpts?.sort ?? alphabeticalSort, showFolderCount: false }),
     ...userOpts,
   }
 
