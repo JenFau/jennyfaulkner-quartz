@@ -10,7 +10,7 @@ const Nav: QuartzComponent = () => {
   )
 }
 
-// Inject Fontshare and Lora font stylesheets early — CSS @import can't be
+// Inject Fontshare font stylesheets early — CSS @import can't be
 // used in custom.scss because SCSS @use hoists base styles before it.
 Nav.beforeDOMLoaded = `;(function () {
   // data-persist keeps these links alive across SPA head-swaps.
@@ -18,7 +18,7 @@ Nav.beforeDOMLoaded = `;(function () {
   // without persistence the font links disappear until prescript.js
   // re-executes (async), causing a FOUT flash on every route change.
   // The existence check prevents duplicates when the script re-runs.
-  var preconnects = ["https://api.fontshare.com", "https://fonts.googleapis.com", "https://fonts.gstatic.com"]
+  var preconnects = ["https://api.fontshare.com"]
   preconnects.forEach(function (href) {
     if (document.querySelector('link[rel="preconnect"][href="' + href + '"]')) return
     var link = document.createElement("link")
@@ -29,8 +29,7 @@ Nav.beforeDOMLoaded = `;(function () {
   })
   var stylesheets = [
     "https://api.fontshare.com/v2/css?f[]=clash-display@600,700&display=swap",
-    "https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@400,500,700&display=swap",
-    "https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400;1,500&display=swap"
+    "https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@400,500,700&display=swap"
   ]
   stylesheets.forEach(function (href) {
     if (document.querySelector('link[rel="stylesheet"][href="' + href + '"]')) return
