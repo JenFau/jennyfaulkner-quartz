@@ -61,13 +61,34 @@ ul.toc-content.overflow > li > a {
 // from hrefs so we can't use [href$="/"] — class is the only reliable signal.
 .section-li .section .desc a.is-folder {
   color: var(--gray);
+  font-family: var(--bodyFont);
+  font-size: 1rem;
+  font-weight: 400;
+  background-color: transparent;
+  padding: 0;
 
   &::before {
-    content: "›\00a0";
+    content: "";
+    display: inline-block;
+    width: 0.85em;
+    height: 0.85em;
+    margin-right: 0.3em;
+    vertical-align: -0.1em;
+    background-color: var(--gray);
+    mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M10 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2h-8l-2-2z' fill='black'/%3E%3C/svg%3E");
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M10 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2h-8l-2-2z' fill='black'/%3E%3C/svg%3E");
+    -webkit-mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
   }
 
   &:hover {
     color: var(--secondary);
+
+    &::before {
+      background-color: var(--secondary);
+    }
   }
 }
 
