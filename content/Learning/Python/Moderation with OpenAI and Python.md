@@ -1,7 +1,8 @@
 ---
 publish: true
+title: Moderation with OpenAI and Python
 created: 2026-05-03T15:55:49.179Z
-modified: 2026-05-03T15:55:49.180Z
+modified: 2026-06-03T10:57:55.626Z
 ---
 
 The OpenAI moderation endpoint can be used to identify if a user's input is potentially harmful. It evaluates text and images against a number of different categories, giving them a score of up to 1.

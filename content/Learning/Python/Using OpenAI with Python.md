@@ -1,7 +1,8 @@
 ---
 publish: true
+title: Using OpenAI with Python
 created: 2026-05-03T15:55:49.260Z
-modified: 2026-06-03T08:38:35.187Z
+modified: 2026-06-03T10:58:27.578Z
 ---
 
 ## Install OpenAI python library

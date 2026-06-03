@@ -1,7 +1,8 @@
 ---
 publish: true
-created: 2026-05-03T15:55:49.230Z
-modified: 2026-05-03T15:55:49.231Z
+title: Classification with Python and OpenAI
+created: 2026-06-02
+modified: 2026-06-03
 ---
 
 ```Python
