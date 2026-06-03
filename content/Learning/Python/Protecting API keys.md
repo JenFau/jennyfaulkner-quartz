@@ -1,5 +1,6 @@
 ---
 publish: true
+type: note
 title: Protecting API keys
 created: 2026-06-03T10:55:33.715Z
 modified: 2026-06-03T10:55:33.715Z

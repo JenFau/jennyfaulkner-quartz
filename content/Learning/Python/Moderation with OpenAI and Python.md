@@ -1,5 +1,6 @@
 ---
 publish: true
+type: note
 title: Moderation with OpenAI and Python
 created: 2026-05-03T15:55:49.179Z
 modified: 2026-06-03T10:57:55.626Z
