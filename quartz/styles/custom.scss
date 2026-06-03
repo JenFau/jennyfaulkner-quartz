@@ -84,10 +84,14 @@ ul.toc-content.overflow > li > a {
 }
 
 .section-li .section .desc a.internal:not(.is-folder) {
-  color: var(--darkgray);
+  color: var(--secondary);
+  font-weight: 400;
+  background-color: transparent;
+  padding: 0;
 
   &:hover {
-    color: var(--secondary);
+    color: var(--tertiary);
+    text-decoration: underline;
   }
 }
 
@@ -102,6 +106,15 @@ li.section-li > .section {
 
 li.section-li {
   margin-bottom: 0.25em;
+}
+
+// Folder index listing: tighten spacing under section headings (Notes, Projects)
+.page-listing h2 {
+  margin-bottom: 0.35rem;
+}
+
+.page-listing ul.section-ul {
+  margin-top: 0.5em;
 }
 
 // Minimal footer
