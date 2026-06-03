@@ -85,6 +85,8 @@ ul.toc-content.overflow > li > a {
 
 .section-li .section .desc a.internal:not(.is-folder) {
   color: var(--secondary);
+  font-family: var(--bodyFont);
+  font-size: 1rem;
   font-weight: 400;
   background-color: transparent;
   padding: 0;
