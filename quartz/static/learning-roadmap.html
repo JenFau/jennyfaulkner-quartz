@@ -442,171 +442,208 @@
 var phases = [
   {
     id: 1,
-    label: "Phase 01",
-    title: "Foundations",
-    duration: "Months 1–4",
+    num: "01",
+    title: "AI Literacy & Business Context",
     color: "#2D6A4F",
     accent: "#B7E4C7",
     icon: "◈",
-    summary: "Get coding, get cloud-ready, get data-literate. The bedrock everything else is built on.",
+    summary: "Orient yourself in the AI landscape. Lead with your existing business knowledge and build the conceptual fluency to evaluate AI systems, vendors, and use cases with confidence.",
     tracks: [
       {
-        name: "Technical Core",
+        name: "AI Basics",
         items: [
-          { title: "Python",    detail: "Start with analytical scripting (NumPy, Pandas) and progress to production-grade code: classes, async/await, type hints, packaging, testing. Not just notebooks." },
-          { title: "AI basics", detail: "Core ML concepts — supervised/unsupervised learning, model evaluation, bias/variance tradeoff — plus transformer fundamentals: tokenization, fine-tuning, and RLHF. Andrew Ng for ML grounding; ‘Attention Is All You Need’ for the transformer intuition." },
-          { title: "AI tooling", detail: "Hands-on: OpenAI API, LangChain, vector databases (Pinecone/Weaviate), basic RAG pipelines." }
+          { title: "What AI is (and isn’t)", detail: "A clear-eyed map of the AI landscape: narrow AI vs. general AI, generative vs. predictive, symbolic vs. statistical. Understand the difference between hype and genuine capability — and how to tell them apart in vendor conversations." },
+          { title: "How large language models work", detail: "Conceptual understanding of transformers, tokenisation, context windows, temperature, and why LLMs hallucinate. Not the mathematics — the mental model needed to reason about model behaviour and set appropriate expectations." },
+          { title: "Key terminology", detail: "The vocabulary of AI: tokens, embeddings, inference, fine-tuning, RAG, agents, grounding, alignment. Fluency here means you can participate fully in technical discussions without needing a translator." }
         ]
       },
       {
-        name: "Software Engineering",
+        name: "The AI Landscape",
         items: [
-          { title: "Distributed systems fundamentals", detail: "Understand CAP theorem, message queues (Kafka, RabbitMQ), API design (REST, gRPC), and microservices. AI systems are distributed systems." },
-          { title: "Cloud infrastructure",             detail: "Pick one cloud deeply: AWS (SageMaker, ECS, Lambda, S3), GCP (Vertex AI, GKE), or Azure (Azure ML, AKS). Get a professional-level cert." },
-          { title: "Containerization & orchestration", detail: "Docker from scratch. Kubernetes fundamentals — deployments, services, autoscaling, resource limits. Essential for deploying models at scale." },
-          { title: "CI/CD & DevOps",                  detail: "GitHub Actions or CircleCI pipelines. Infrastructure as Code with Terraform. You’ll be setting standards for MLOps pipelines." }
+          { title: "Frontier models", detail: "The major model providers — OpenAI (GPT series), Anthropic (Claude), Google (Gemini), Meta (Llama), Mistral. Understand their positioning, strengths, pricing models, and appropriate use cases. Know how to evaluate them against each other for a given business problem." },
+          { title: "AI tooling ecosystem", detail: "A map of the layers: model APIs, orchestration frameworks (LangChain, LlamaIndex), vector databases, AI gateways, observability tools. You don’t need to build with these — you need to know what each layer does and why it exists." },
+          { title: "End-user AI tools", detail: "The growing landscape of AI-powered products: Copilot, Cursor, Notion AI, Harvey, and sector-specific tools. Understanding what’s available as off-the-shelf vs. what requires custom development is a core business evaluation skill." }
         ]
       },
       {
-        name: "Data Engineering",
+        name: "Business Application",
         items: [
-          { title: "Data pipeline design",       detail: "Apache Airflow, dbt, Spark. Understand batch vs. streaming ingestion. Know how to move and transform data reliably at scale." },
-          { title: "Storage architecture",       detail: "When to use data lakes (S3/GCS), warehouses (Snowflake/BigQuery), lakehouses (Databricks/Delta Lake), and vector stores (Pinecone/pgvector)." },
-          { title: "Schema design & data modeling", detail: "Dimensional modeling, slowly changing dimensions, event sourcing. Bad data architecture will sink any AI system." },
-          { title: "Streaming data",             detail: "Kafka or Kinesis for real-time inference pipelines. Many production AI systems need sub-second data freshness." }
+          { title: "Use case identification & prioritisation", detail: "Frameworks for identifying where AI creates genuine value vs. where it’s a solution looking for a problem. Effort/impact matrices, feasibility assessment, and how to build a business case for AI investment." },
+          { title: "AI strategy fundamentals", detail: "How organisations approach AI adoption: the crawl/walk/run model, the data foundation prerequisite, common failure modes. Learn to present AI investment cases in language that resonates at C-suite level." },
+          { title: "Build vs. buy vs. prompt", detail: "The core decision framework for AI initiatives: when to use a frontier model out of the box, when prompt engineering is sufficient, when fine-tuning adds value, and when a custom solution is justified." }
+        ]
+      },
+      {
+        name: "Practical Fluency",
+        items: [
+          { title: "Prompt engineering", detail: "Systematic prompting: zero-shot, few-shot, chain-of-thought, role prompting, output formatting. The ability to get reliable, structured output from LLMs is a fundamental skill for anyone directing AI work." },
+          { title: "Working with AI tools hands-on", detail: "Regular hands-on use of Claude, ChatGPT, Gemini and relevant domain tools. The goal is intuition — understanding how these systems behave, where they fail, and what kinds of tasks they genuinely accelerate." },
+          { title: "Python", detail: "Enough Python to read and run notebooks, interrogate datasets, and understand what engineers are doing. Not production engineering — the literacy to collaborate with technical teams and not be dependent on them for simple data tasks." }
         ]
       },
       {
         name: "Milestones",
         items: [
-          { title: "Earn 1 cloud architect cert",    detail: "AWS Solutions Architect, GCP Professional Cloud Architect, or Azure Solutions Architect Expert." },
-          { title: "Deploy a full-stack app to prod", detail: "Containerized, CI/CD’d, cloud-hosted, monitored. Something you built and own." },
-          { title: "Complete 1 ML certification",    detail: "AWS ML Specialty, Google Cloud Professional ML Engineer, or DeepLearning.AI specialization." }
+          { title: "AI use case audit", detail: "Conduct a structured AI opportunity assessment for a real organisation or business function. Produce a prioritised backlog with business cases." },
+          { title: "Vendor evaluation", detail: "Run a structured evaluation of two or more LLM providers against a defined use case. Document trade-offs and produce a recommendation." },
+          { title: "Prompt engineering portfolio", detail: "Build a documented set of reusable prompt patterns for common business tasks: summarisation, classification, extraction, drafting, analysis." }
         ]
       }
     ]
   },
   {
     id: 2,
-    label: "Phase 02",
-    title: "LLM Engineering & Agents",
-    duration: "Months 5–9",
+    num: "02",
+    title: "Data, ML & Systems",
     color: "#1D3557",
     accent: "#A8DADC",
     icon: "◉",
-    summary: "Get into practical LLM work fast. Models, fine-tuning, RAG, and agents — the core of modern AI engineering.",
+    summary: "Develop the technical depth to understand how AI systems are built, trained, and operated — and to evaluate and challenge the decisions that go into them.",
     tracks: [
       {
-        name: "Model Fundamentals",
+        name: "Machine Learning",
         items: [
-          { title: "ML theory",                detail: "Linear/logistic regression, decision trees, ensembles, gradient boosting. Know bias-variance, regularization, and cross-validation cold." },
-          { title: "Deep learning architecture", detail: "CNNs, RNNs, transformers — understand the math, not just the APIs. Implement a transformer from scratch in PyTorch." },
-          { title: "LLMs in depth",            detail: "Pre-training, fine-tuning (SFT, LoRA, QLoRA), RLHF, inference optimization (quantization, speculative decoding). Read the GPT-4 technical report." },
-          { title: "Multimodal systems",       detail: "Vision-language models (CLIP, LLaVA), speech (Whisper), image generation (diffusion models)." }
+          { title: "Core ML concepts", detail: "Supervised vs. unsupervised learning, classification vs. regression, clustering. How models learn from data: loss functions, gradient descent, training vs. validation vs. test sets. The conceptual foundation for everything else." },
+          { title: "Model evaluation", detail: "Accuracy, precision, recall, F1, AUC-ROC — what these metrics mean in practice and which matter for which business problems. How to interpret model performance reports without being misled by cherry-picked metrics." },
+          { title: "Overfitting, bias and variance", detail: "Why models fail to generalise, what training data quality means, and the fundamental tension between model complexity and reliability. Essential for evaluating whether an AI system will hold up in production." },
+          { title: "Fine-tuning vs. prompting", detail: "When fine-tuning a model adds genuine value over prompt engineering alone. The data requirements, cost implications, and trade-offs involved. How LoRA and parameter-efficient fine-tuning work conceptually." }
         ]
       },
       {
-        name: "MLOps & Production AI",
+        name: "Model Training & LLMs",
         items: [
-          { title: "Experiment tracking", detail: "MLflow, Weights & Biases, or Neptune. Design the systems teams use for experiment management." },
-          { title: "Feature stores",      detail: "Feast, Tecton, or Hopsworks. The bridge between data engineering and ML. Critical for preventing training-serving skew." },
-          { title: "Model serving",       detail: "Triton Inference Server, TorchServe, vLLM for LLMs. Latency vs. throughput tradeoffs. GPU memory management." },
-          { title: "Model monitoring",    detail: "Data drift, concept drift, performance degradation. Evidently AI, Arize, or custom solutions." }
+          { title: "How LLMs are trained", detail: "Pre-training on large corpora, supervised fine-tuning (SFT), reinforcement learning from human feedback (RLHF). Understanding these stages helps you reason about model behaviour, alignment, and the cost of training custom models." },
+          { title: "Inference and optimisation", detail: "What happens at inference time: quantisation, batching, speculative decoding, GPU memory constraints. You won’t tune these yourself — but understanding the trade-offs between latency, throughput, and cost is essential for architecture conversations." },
+          { title: "Multimodal models", detail: "Vision-language models, speech recognition (Whisper), image generation (diffusion models). The expanding capability surface of AI and what it means for the range of problems you can now address." }
         ]
       },
       {
-        name: "RAG & Agents",
+        name: "Data Fundamentals",
         items: [
-          { title: "RAG architecture",          detail: "Advanced RAG: hybrid search, re-ranking, query routing, agentic retrieval. Know when naive RAG fails and how to fix it — chunking strategy, embedding model selection, metadata filtering." },
-          { title: "Agentic systems",           detail: "Multi-agent frameworks (LangGraph, AutoGen, CrewAI). Understand orchestration vs. choreography, tool-use patterns, memory architectures, and failure modes." },
-          { title: "AI gateway patterns",       detail: "Prompt routing, load balancing across models, fallback chains, cost management, semantic caching. The infrastructure layer most orgs need but few have designed well." },
-          { title: "Evaluation architecture",   detail: "LLM-as-judge pipelines, automated test suites, red-teaming infrastructure. Systems for continuous quality measurement." }
+          { title: "Data pipelines", detail: "How data moves from source to model: ingestion, transformation, validation, and storage. Batch vs. streaming. Understanding pipelines helps you identify where AI systems can break and where data quality problems originate." },
+          { title: "Storage architecture", detail: "Data lakes, warehouses, lakehouses, and vector stores — when each is appropriate and what the trade-offs are. You need to be able to read and challenge storage architecture decisions, not design them." },
+          { title: "Data quality & lineage", detail: "Why data quality is the single biggest predictor of AI system success. What lineage means, how to think about data governance, and what questions to ask when a team presents their data strategy." }
+        ]
+      },
+      {
+        name: "RAG & Agent Architectures",
+        items: [
+          { title: "Retrieval-augmented generation", detail: "How RAG works: chunking, embedding, retrieval, re-ranking, generation. Why it exists (knowledge cutoffs, hallucination reduction, proprietary data). When it’s the right approach and when it’s being over-applied." },
+          { title: "Agentic systems", detail: "Multi-step AI agents: tool use, memory architectures, orchestration patterns. LangGraph, AutoGen, CrewAI — what they are and when you’d choose each. Understanding failure modes is as important as understanding capabilities." },
+          { title: "Evaluation architecture", detail: "How to measure whether an AI system is actually working: LLM-as-judge pipelines, automated test suites, human evaluation design. The question ‘how do we know it’s good?’ should be answered before you deploy." }
+        ]
+      },
+      {
+        name: "Systems Literacy",
+        items: [
+          { title: "Cloud infrastructure concepts", detail: "Enough cloud knowledge to read an architecture diagram and participate in infrastructure decisions: compute, storage, networking, managed services. AWS, GCP, and Azure at a conceptual level — not for certification." },
+          { title: "Containerisation & orchestration concepts", detail: "What Docker and Kubernetes do and why they matter for AI deployment. Understanding resource limits, autoscaling, and deployment patterns at the level needed to challenge engineering proposals." },
+          { title: "Security for AI systems", detail: "Prompt injection, model exfiltration, PII leakage in training data, audit logging. The threat surface specific to AI systems and what good security practice looks like — from an evaluation and governance perspective." },
+          { title: "Observability", detail: "How AI systems are monitored in production: distributed tracing, LLM-specific metrics (token usage, latency, refusal rates), drift detection. Understanding observability helps you ask the right questions about operational readiness." }
         ]
       },
       {
         name: "Milestones",
         items: [
-          { title: "Fine-tune and deploy an LLM",    detail: "Use LoRA on an open-source model (Llama, Mistral). Serve it with vLLM behind a FastAPI endpoint. Benchmark latency and throughput." },
-          { title: "Build a complete MLOps pipeline", detail: "Data ingestion → training → evaluation → registry → serving → monitoring. Automated retraining on drift." },
-          { title: "Ship an agentic application",    detail: "A real multi-step agent using LangGraph or AutoGen. Tool use, memory, error recovery. Not a demo — something that solves a real problem." }
+          { title: "Architecture review", detail: "Review a proposed AI system architecture — real or case-study — and produce a written critique covering data strategy, model selection, evaluation approach, and operational risks." },
+          { title: "RAG prototype", detail: "Build a basic RAG application using a framework like LangChain or LlamaIndex. The goal is hands-on understanding of the pipeline, not production-grade engineering." },
+          { title: "ML model evaluation", detail: "Take a trained model (or use a public one) and produce a structured evaluation report: performance metrics, failure analysis, business implications." }
         ]
       }
     ]
   },
   {
     id: 3,
-    label: "Phase 03",
-    title: "Systems Design",
-    duration: "Months 10–15",
+    num: "03",
+    title: "Governance, Risk & Decision Frameworks",
     color: "#7B2D8B",
     accent: "#E0AAFF",
     icon: "◎",
-    summary: "Architecture is about tradeoffs at scale. Design systems that are reliable, observable, and evolvable.",
+    summary: "Apply your technical understanding and business experience to the decisions that matter most: governance, risk, ethics, and how organisations should invest in and manage AI.",
     tracks: [
       {
-        name: "AI System Patterns",
+        name: "AI Governance",
         items: [
-          { title: "Human-in-the-loop design", detail: "When and how to insert human review. Confidence thresholds, escalation paths, feedback loops for retraining. Critical for regulated industries." },
-          { title: "Cost architecture",        detail: "GPU cost modeling, spot instance strategies, inference cost per token, make vs. buy decisions. Architects who ignore cost get fired." }
+          { title: "Regulatory landscape", detail: "EU AI Act, GDPR implications for AI, sector-specific regulation (financial services, healthcare). Understanding risk tiers, prohibited uses, and compliance obligations — at the level needed to advise organisations and engage with legal teams." },
+          { title: "Model risk management", detail: "How to assess and communicate AI risk: model validation, performance degradation risk, third-party model risk, concentration risk. MRM frameworks from financial services are increasingly being applied across sectors." },
+          { title: "AI governance frameworks", detail: "What good governance looks like in practice: model cards, data sheets, deployment checklists, incident runbooks, review boards. The difference between governance as theatre and governance as a genuine control mechanism." },
+          { title: "Technical standards", detail: "Writing and applying AI architecture principles at an organisational level. How to turn governance intent into engineering standards that teams will actually follow." }
         ]
       },
       {
-        name: "Reliability & Scale",
+        name: "Ethics & Fairness",
         items: [
-          { title: "High-availability AI systems", detail: "Multi-region model serving, failover strategies, circuit breakers. SLA design for AI — latency SLOs are different from traditional services." },
-          { title: "Security for AI systems",      detail: "Prompt injection defense, model exfiltration risks, PII leakage in training data, audit logging. SOC2 and ISO27001 implications." },
-          { title: "Observability",                detail: "Distributed tracing for AI pipelines (OpenTelemetry), LLM-specific metrics (token usage, latency percentiles, refusal rates), dashboards." }
+          { title: "Bias in AI systems", detail: "Types of bias: data bias, algorithmic bias, feedback loops, representation gaps. How to identify bias, the business and legal risks it creates, and what mitigation approaches are credible vs. performative." },
+          { title: "Fairness, accountability, transparency", detail: "The core principles of responsible AI translated into practical constraints: explainability requirements, audit processes, who is accountable when a model causes harm. How these principles translate into engineering and product decisions." },
+          { title: "AI safety concepts", detail: "Alignment, RLHF, Constitutional AI, red-teaming. Not at a research level — but understanding the approaches being used to make AI systems safer and the limitations of each." }
         ]
       },
       {
-        name: "Architecture Docs",
+        name: "Decision Frameworks",
         items: [
-          { title: "ADR practice",          detail: "Architecture Decision Records. Document why you made each major choice. Architects who can’t explain their decisions don’t last." },
-          { title: "C4 model diagrams",     detail: "Context, Container, Component, Code diagrams. Master PlantUML or Mermaid for version-controlled diagrams." },
-          { title: "RFCs and design reviews", detail: "Learn to write Request for Comment documents and run architecture review boards. You’ll spend as much time in review as in design." }
+          { title: "AI investment sequencing", detail: "How to advise organisations on the order of AI investments: data foundation first, then infrastructure, then tooling, then advanced capability. The common mistake of skipping foundations for visible AI features." },
+          { title: "Total cost of ownership", detail: "The full cost picture for AI systems: compute, human review, maintenance, retraining, compliance, and failure costs. TCO analysis for build vs. buy vs. prompt decisions." },
+          { title: "AI readiness assessment", detail: "A structured framework for evaluating whether an organisation is ready to deploy AI: data maturity, talent, governance, infrastructure, and change management. The diagnostic tool that precedes strategy." },
+          { title: "Use case prioritisation", detail: "Frameworks for ranking AI opportunities: value, feasibility, data availability, risk, strategic alignment. How to build a roadmap that sequences quick wins alongside strategic investments." }
+        ]
+      },
+      {
+        name: "Architecture Literacy",
+        items: [
+          { title: "Reading and writing ADRs", detail: "Architecture Decision Records: understanding the format, evaluating the reasoning, and contributing to the decisions. You don’t need to write ADRs from scratch — you need to be a credible participant in architecture reviews." },
+          { title: "C4 model diagrams", detail: "Context, Container, Component, Code diagrams. Being able to read and produce C4 diagrams is the lingua franca of architecture communication — essential for bridging business and technical conversations." },
+          { title: "Human-in-the-loop design", detail: "When and how to insert human review into AI workflows. Confidence thresholds, escalation paths, feedback loops for retraining. Critical for regulated industries and high-stakes decisions." }
         ]
       },
       {
         name: "Milestones",
         items: [
-          { title: "Design a production-grade AI platform", detail: "Full architecture: data layer, training infrastructure, serving, monitoring, governance. Write the ADRs. Present to engineering leadership." },
-          { title: "Contribute to open source",             detail: "PR to LangChain, LlamaIndex, vLLM, or similar. Shows you can work in complex codebases and builds community reputation." }
+          { title: "AI readiness assessment", detail: "Develop and apply a structured AI readiness framework to a real or hypothetical organisation. Produce a report with findings and a sequenced investment recommendation." },
+          { title: "Governance framework", detail: "Design an AI governance framework for a specific organisational context: policies, standards, review processes, and accountability structures." },
+          { title: "Ethics audit", detail: "Conduct a bias and fairness audit on an existing AI system or case study. Document findings and recommend mitigations." }
         ]
       }
     ]
   },
   {
     id: 4,
-    label: "Phase 04",
-    title: "AI Strategy & Governance",
-    duration: "Month 16+",
+    num: "04",
+    title: "Thought Leadership & Influence",
     color: "#B5451B",
     accent: "#FFDDD2",
     icon: "◐",
-    summary: "Apply your technical foundation to business strategy, governance, and organisational decision-making. This is where your business experience becomes a competitive advantage.",
+    summary: "Convert your expertise into visible credibility. Own frameworks, published thinking, and a reputation that precedes you.",
     tracks: [
       {
-        name: "Strategy & Governance",
+        name: "Signature Frameworks",
         items: [
-          { title: "AI strategy",   detail: "Learn to present AI investment cases at the C-suite level. Read about enterprise change management and technology adoption curves." },
-          { title: "AI governance", detail: "EU AI Act, model risk management, bias auditing. Compliance knowledge is increasingly a table-stakes requirement." },
-          { title: "AI ethics",     detail: "Fairness, transparency, and accountability in AI systems. Understand bias types, audit processes, and how ethical principles translate into engineering constraints and product decisions." }
+          { title: "AI Readiness Assessment", detail: "Develop your own named framework for evaluating organisational AI readiness. The specific dimensions, scoring approach, and output format should reflect your distinct point of view — not a repackaging of existing models." },
+          { title: "Use Case Prioritisation Matrix", detail: "A repeatable tool for ranking AI opportunities across value, feasibility, risk, and strategic fit. Something clients and employers can apply and associate with your name." },
+          { title: "AI Architecture Principles", detail: "A published set of principles for how organisations should approach AI system design: defaults on data, evaluation, governance, and cost. Your engineering and strategy synthesis in a shareable format." }
         ]
       },
       {
-        name: "Decision Frameworks",
+        name: "Published Writing",
         items: [
-          { title: "Build vs. buy frameworks", detail: "Help orgs decide: fine-tune, prompt-engineer, or buy a SaaS tool. Map total cost of ownership across options." },
-          { title: "AI platform strategy",     detail: "Build vs. buy decisions at the org level. How to sequence investments: data foundation first, then training infrastructure, then serving, then tooling." },
-          { title: "Technical standards",      detail: "Write the org’s AI architecture principles. Model cards, data sheets, deployment checklists, incident runbooks." }
+          { title: "Architecture decision posts", detail: "Write about real decisions: why you chose one approach over another, what the trade-offs were, what you’d do differently. Specificity and honesty outperform generic AI commentary every time." },
+          { title: "Postmortems and case studies", detail: "Document AI projects that didn’t go as planned — yours or publicly known ones. Postmortems are rare and highly valued: they signal genuine experience rather than surface familiarity." },
+          { title: "Benchmarks and evaluations", detail: "Publish structured comparisons: LLM providers on a specific task, RAG approaches on a specific dataset, governance frameworks across industries. Empirical writing builds credibility that opinion pieces don’t." }
+        ]
+      },
+      {
+        name: "Speaking & Community",
+        items: [
+          { title: "Local talks and meetups", detail: "Start with AI and tech meetups, industry association events, and webinars. The first talk is always harder than the subsequent ones — the goal is to establish the habit and gather feedback." },
+          { title: "Conference submissions", detail: "Identify 2–3 target conferences in your domain. Write and submit a talk proposal. Rejection is normal; the submission process itself sharpens your thinking about what your distinct perspective is." },
+          { title: "Community participation", detail: "Engage in the communities where AI practitioners and decision-makers spend time: relevant Slack groups, LinkedIn, Substack, open source adjacent work. Consistent, substantive contribution builds reputation faster than broadcasting." }
         ]
       },
       {
         name: "Milestones",
         items: [
-          { title: "Develop a signature framework", detail: "Create your own ‘AI Readiness Assessment’ or ‘Use Case Prioritization Matrix’. Own language = perceived expertise." },
-          { title: "Publish technical writing",     detail: "Engineering blog posts on architecture decisions, postmortems, benchmarks. Builds credibility and sharpens thinking." },
-          { title: "Give a talk",                   detail: "Start local: meetups, industry associations, webinars. Working toward a real conference submission." }
+          { title: "Publish a signature framework", detail: "Release your AI Readiness Assessment or Use Case Prioritisation Matrix publicly — as a blog post, PDF, or interactive tool. Get it in front of real practitioners and iterate based on feedback." },
+          { title: "Give a talk", detail: "Deliver a talk at a meetup, webinar, or industry event. Record it. The discipline of preparing a talk accelerates thinking more than almost anything else." },
+          { title: "10 published pieces", detail: "Reach a body of 10 published pieces — posts, case studies, benchmarks, framework releases. Quality over quantity, but quantity matters too: it signals sustained commitment, not a one-off." }
         ]
       }
     ]
@@ -615,8 +652,8 @@ var phases = [
 
 // Skills with corresponding vault pages get <a> tags; all others stay <span>
 var linkedSkills = {
-  "Python":       "/Learning/Python/",
-  "AI basics":    "/Learning/AI-Basics/"
+  "Python":    "/Learning/Python/",
+  "AI Basics": "/Learning/AI-Basics/"
 };
 
 function esc(s) {
@@ -704,7 +741,7 @@ function render() {
     var style = "style=\"--pc:" + p.color + ";--pa:" + p.accent + "\"";
     return [
       "<button class=\"phase-btn" + (i === 0 ? " active" : "") + "\" data-phase=\"" + i + "\" " + style + ">",
-        "<div class=\"pb-label\">" + esc(p.label) + "</div>",
+        "<div class=\"pb-label\">" + esc(p.num) + "</div>",
         "<div class=\"pb-title\">" + esc(p.title) + "</div>",
         "<div class=\"pb-bar\"></div>",
       "</button>"
