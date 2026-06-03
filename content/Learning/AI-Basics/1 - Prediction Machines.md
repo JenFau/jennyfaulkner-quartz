@@ -1,6 +1,5 @@
 ---
 publish: true
-type: note
 title: 1 - Prediction Machines
 created: 2026-06-03T10:55:33.712Z
 modified: 2026-06-03T10:55:33.714Z

@@ -2,6 +2,8 @@
 publish: true
 created: 2026-05-03T15:55:49.270Z
 modified: 2026-05-03T15:55:49.270Z
+published: 2026-05-03T15:55:49.270Z
+dg-publish: true
 ---
 
 This note has an emphasis on how **lists, dictionaries, loops, booleans, and conditionals** combine in practical code.

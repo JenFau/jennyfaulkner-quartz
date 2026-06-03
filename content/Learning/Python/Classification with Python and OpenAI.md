@@ -1,6 +1,5 @@
 ---
 publish: true
-type: note
 title: Classification with Python and OpenAI
 created: 2026-06-02
 modified: 2026-06-03

@@ -1,7 +1,6 @@
 ---
 publish: true
 title: LLM Model Evaluator
-type: project
 description: A side-by-side LLM comparison tool built with Python, Streamlit, and the Groq API
 created: 2026-06-03T10:21:46.139Z
 modified: 2026-06-03T10:23:13.011Z

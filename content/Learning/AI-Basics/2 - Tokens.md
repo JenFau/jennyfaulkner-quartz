@@ -1,6 +1,5 @@
 ---
 publish: true
-type: note
 title: 2 - Tokens
 created: 2026-06-03T10:55:33.714Z
 modified: 2026-06-03T10:55:33.714Z
