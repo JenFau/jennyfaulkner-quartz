@@ -2,7 +2,9 @@
 publish: true
 title: Dissertation - Rationality of emotions towards fictional characters
 created: 2025-06-15T17:18:22.286Z
-modified: 2026-05-03T15:41:59.383Z
+modified: 2026-06-03T13:37:50.686Z
+published: 2026-06-03T13:37:50.686Z
+section: Philosophy
 ---
 
 This dissertation was submitted as part of my undergraduate degree in Philosophy in 2024 for the University of London.
@@ -15,11 +17,11 @@ How can we be moved by the plight of characters when engaging in fiction even th
 
 However, the exact nature of this claimed irrationality is unclear, leading to many attempts to clarify Radford’s argument. Whilst many such attempts consider the wider set of papers that Radford wrote on this topic, this essay will mainly focus on Radford’s 1975 paper in an attempt to understand his initial argument and to examine whether it is successful.
 
-I shall start with an examination of Radford’s claim that belief in required for emotion in the real world context, both by outlining the cognitive theory of emotion and by examining Radford’s three ‘Belief Examples’, which I shall find to be intuitively plausible but underwhelming.
+I shall start with an examination of Radford’s claim that belief is required for emotion in the real world context, both by outlining the cognitive theory of emotion and by examining Radford’s three ‘Belief Examples’, which I shall find to be intuitively plausible but underwhelming.
 
 I shall then outline the usual interpretation of Radford’s paper as the so called ‘Paradox of Fiction’ that claims _cognitive irrationality_ arises from holding three seemingly plausible but inconsistent premises. After showing why this cannot be Radford’s intended meaning, I will examine two normative claims: _agent irrationality,_ that agents engaging in fiction fail to comply with the normative standards that apply to real world emotion, and _emotional rationality_, that fictional emotions fail to comply with the normative standards against which real world emotions are assessed.
 
-I shall go on to explore, and reject, an alternative view that Radford’s paper was a causal question before putting forward my own interpretation that Radford’s paper is most simply understood as outlining puzzle of intelligibility, that ultimately results in a claim of incoherence and, therefore, irrationality. I shall also briefly look at Radford’s directly claims of irrationality in his later papers and suggest that this is a separate application of the label ‘irrational’ towards specific emotion types that include fear, leaving my interpretation of irrationality as unintelligibility to stand.
+I shall go on to explore, and reject, an alternative view that Radford’s paper was a causal question, before putting forward my own interpretation that Radford’s paper is most simply understood as outlining puzzle of intelligibility that ultimately results in a claim of incoherence and, therefore, irrationality. I shall also briefly look at Radford’s directly claims of irrationality in his later papers and suggest that this is a separate application of the label ‘irrational’ towards specific emotion types that include fear, leaving my interpretation of irrationality as unintelligibility to stand.
 
 I shall ultimately conclude that, when understood as a puzzle of intelligibility, Radford’s concern has not (and cannot) been resolved and therefore he was justified in his concern.
 
