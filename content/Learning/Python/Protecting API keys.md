@@ -1,8 +1,8 @@
 ---
 publish: true
-title: protecting API keys
+title: Protecting API keys
 created: 2026-06-03T07:21:28.336+01:00
-modified: 2026-06-03T07:22:15.700+01:00
+modified: 2026-06-03T07:26:15.653+01:00
 ---
 
 To install the OpenAI Python library and `python-dotenv` for secure key management:
