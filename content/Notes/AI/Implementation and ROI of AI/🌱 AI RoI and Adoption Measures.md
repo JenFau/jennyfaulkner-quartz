@@ -13,7 +13,7 @@ The article advises focusing on AI implement to solve problems the organisation 
 What measures can be used for RoI of AI? The article [Why Utah Uses More AI Than California?](https://www.2ndorderthinkers.com/p/ai-gender-gap-fliped?r=xxfqa\&utm_medium=ios\&triedRedirect=true) makes some attempt (unsuccessfully, I would argue) to identify some ways of measuring it:
 
 **Enterprise ROI**
-– Claim: 95% of organisations see _zero_ measurable ROI from GenAI despite $30–40B investment.
+– Claim: 95% of organisations see _zero_ measurable ROI from GenAI despite \$30–40B investment.
 – Source: MIT report, _The GenAI Divide: State of AI in Business 2025_.
 
 **Consumer monetisation**

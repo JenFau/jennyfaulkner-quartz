@@ -7,7 +7,7 @@ modified: 2025-10-27
 AI slop - seemingly polished but low-value AI generated work - is now a big problem in workplaces. The _Harvard Business Review_ article [AI-Generated Workslop Is Destroying Productivity](https://hbr.org/2025/09/ai-generated-workslop-is-destroying-productivity) (September 2025) highlights the key quantitative findings:
 
 - 40% of workers surveyed reported receiving AI-generated “workslop” and each instance of AI slop costs an average of two hours to correct or reinterpret.
-- For a company with 10,000 employees, this equates to approximately $9 million per year in lost productivity. Over one-third of respondents said they now spend more time checking AI outputs than producing original work.
+- For a company with 10,000 employees, this equates to approximately \$9 million per year in lost productivity. Over one-third of respondents said they now spend more time checking AI outputs than producing original work.
 - The main cause identified was indiscriminate AI use — employees using generative tools by default rather than by need.
 
 In other words, colleagues who use AI indiscriminately and put forward poor quality work are passing the problem down the line - _they_ may save time, but others have to put in the effort to fix the work.

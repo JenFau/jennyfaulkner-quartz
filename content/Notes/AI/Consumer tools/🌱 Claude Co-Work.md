@@ -1,7 +1,7 @@
 ---
 publish: true
-created: 2026-05-03T16:55:48.968+01:00
-modified: 2026-05-03T16:55:48.968+01:00
+created: 2026-05-03T15:55:48.968Z
+modified: 2026-05-03T15:55:48.968Z
 ---
 
 Claude Co-Work is a further example of Claude moving from AI as chat assistant towards agentic behaviour ([[🌱 A shift from 'chat' assistants to action takers]]). It can be thought of as a “work agent” that can operate on your computer: opens files, browses the web, uses tools, runs code, and completes everyday tasks.

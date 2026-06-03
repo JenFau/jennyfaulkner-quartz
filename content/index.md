@@ -1,8 +1,8 @@
 ---
 publish: true
 title: Jenny Faulkner
-created: 2026-05-03T15:00:47.624+01:00
-modified: 2026-06-02T20:50:36.241+01:00
+created: 2026-05-03T14:00:47.624Z
+modified: 2026-06-02T19:50:36.241Z
 ---
 
 Hi, I'm Jenny. I work at the intersection of technology and the people who use it — thinking about systems, communication, and how we can all do better work.

@@ -1,7 +1,7 @@
 ---
 publish: true
-created: 2026-05-03T16:55:48.898+01:00
-modified: 2026-06-02T21:48:31.122+01:00
+created: 2026-05-03T15:55:48.898Z
+modified: 2026-06-02T20:48:31.122Z
 ---
 
 In supervised learning, models are trained on labeled data, meaning the input data is paired with the correct output. The goal is to learn a mapping function to predict labels for new, unseen data.

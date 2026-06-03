@@ -1,8 +1,8 @@
 ---
 publish: true
 title: Dissertation - Rationality of emotions towards fictional characters
-created: 2025-06-15T18:18:22.286+01:00
-modified: 2026-05-03T16:41:59.383+01:00
+created: 2025-06-15T17:18:22.286Z
+modified: 2026-05-03T15:41:59.383Z
 ---
 
 This dissertation was submitted as part of my undergraduate degree in Philosophy in 2024 for the University of London.

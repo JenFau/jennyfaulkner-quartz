@@ -1,7 +1,7 @@
 ---
 publish: true
-created: 2026-05-03T16:55:49.265+01:00
-modified: 2026-05-03T16:55:49.265+01:00
+created: 2026-05-03T15:55:49.265Z
+modified: 2026-05-03T15:55:49.265Z
 ---
 
 Obsidian has recently released a CLI (command line interface) that lets you control Obsidian from your terminal. This allows for scripting, automation, and integration with external tools. [Source](https://help.obsidian.md/cli)

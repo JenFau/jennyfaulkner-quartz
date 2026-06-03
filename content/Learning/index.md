@@ -1,8 +1,8 @@
 ---
 publish: true
 title: Learning
-created: 2026-06-02T17:47:08.275+01:00
-modified: 2026-06-02T17:51:18.905+01:00
+created: 2026-06-02T16:47:08.275Z
+modified: 2026-06-02T16:51:18.905Z
 ---
 
 My AI development roadmap.

@@ -1,7 +1,7 @@
 ---
 publish: true
-created: 2026-05-03T16:55:49.134+01:00
-modified: 2026-05-03T16:55:49.134+01:00
+created: 2026-05-03T15:55:49.134Z
+modified: 2026-05-03T15:55:49.134Z
 ---
 
 There is often much talk of the AI bubble when considering the sustainability of AI. ([[⏰]] Expand on this)

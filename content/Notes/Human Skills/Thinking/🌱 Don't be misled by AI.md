@@ -1,7 +1,7 @@
 ---
 publish: true
-created: 2026-05-03T16:55:48.764+01:00
-modified: 2026-05-03T16:55:48.764+01:00
+created: 2026-05-03T15:55:48.764Z
+modified: 2026-05-03T15:55:48.764Z
 ---
 
 [This video](https://www.youtube.com/watch?v=9iSAnmVK68s) suggests claims that 'smart' / experienced people may be even more susceptible to being wrongly persuaded by AI's output than novices. I find its claims to be somewhat conceptual and would like the points to be more strongly argued.

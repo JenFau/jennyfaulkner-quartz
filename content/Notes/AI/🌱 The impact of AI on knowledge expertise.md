@@ -1,7 +1,7 @@
 ---
 publish: true
-created: 2026-05-03T16:55:48.863+01:00
-modified: 2026-05-03T16:55:48.864+01:00
+created: 2026-05-03T15:55:48.863Z
+modified: 2026-05-03T15:55:48.864Z
 ---
 
 Whilst many people are arguing that domain expertise will be of key importance, even with the rise of AI (see [[🌱 The impact of AI on jobs#The continuing importance of domain knowledge|The continuing importance of domain knowledge]]), it is undoubtably true that AI can help us quickly gain a decent foundational knowledge in areas in which we do not have expertise. This is also a good example of using AI to augment our thinking, not to replace it.

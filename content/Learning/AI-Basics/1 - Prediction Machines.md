@@ -1,8 +1,8 @@
 ---
 publish: true
 title: 1 - Prediction Machines
-created: 2026-06-02T21:13:50.255+01:00
-modified: 2026-06-02T21:44:13.837+01:00
+created: 2026-06-02T20:13:50.255Z
+modified: 2026-06-02T20:44:13.837Z
 ---
 
 It is important to know that AI, at its core, is just a very sophisticated prediction machine. It might seem as if it understands what we are inputting, but in actual fact it is making sophisticated predictions based on its training. Let’s look at that in more detail.

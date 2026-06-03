@@ -1,7 +1,7 @@
 ---
 publish: true
-created: 2026-05-03T16:55:49.179+01:00
-modified: 2026-05-03T16:55:49.180+01:00
+created: 2026-05-03T15:55:49.179Z
+modified: 2026-05-03T15:55:49.180Z
 ---
 
 The OpenAI moderation endpoint can be used to identify if a user's input is potentially harmful. It evaluates text and images against a number of different categories, giving them a score of up to 1.

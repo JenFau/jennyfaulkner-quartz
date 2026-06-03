@@ -2,6 +2,10 @@
 publish: true
 title: Python
 description: Building Python fluency for AI development
-created: 2026-06-02T17:47:45.157+01:00
-modified: 2026-06-02T17:47:54.015+01:00
+created: 2026-06-03T10:21:52.697Z
+modified: 2026-06-03T10:21:52.701Z
 ---
+
+## Projects
+
+[[LLM Model Evaluator]] — Side-by-side LLM comparison tool built with Streamlit and the Groq API.

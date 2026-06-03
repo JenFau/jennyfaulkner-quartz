@@ -1,7 +1,7 @@
 ---
 publish: true
-created: 2026-05-03T16:55:49.121+01:00
-modified: 2026-05-03T16:55:49.121+01:00
+created: 2026-05-03T15:55:49.121Z
+modified: 2026-05-03T15:55:49.121Z
 ---
 
 Agents have traditionally been thought of as comprising of an orchestration layer, explicit planning or reasoning loops, tool use with memory of state and multi-step pursuit. Common agentic frameworks include LangChain, AutoGPT, CrewAI, etc.

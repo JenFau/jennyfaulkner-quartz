@@ -1,7 +1,7 @@
 ---
 publish: true
-created: 2026-05-03T16:55:49.255+01:00
-modified: 2026-05-03T16:55:49.255+01:00
+created: 2026-05-03T15:55:49.255Z
+modified: 2026-05-03T15:55:49.255Z
 ---
 
 Obsidian can be used with Claude Desktop via a MCP.  [Zen van Riel](https://youtu.be/VeTnndXyJQI?si=ZEr9kWnrTb4eoaW4)  (March 2025) shows one way of setting up Obsidian and Claude Desktop using [this MCP](https://github.com/MarkusPfundstein/mcp-obsidian) that allows for writing to the vault as well as reading it.

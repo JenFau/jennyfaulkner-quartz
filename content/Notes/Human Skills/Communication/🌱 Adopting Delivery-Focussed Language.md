@@ -1,7 +1,7 @@
 ---
 publish: true
-created: 2026-02-13T23:53:03.247+00:00
-modified: 2026-05-03T15:22:23.221+01:00
+created: 2026-02-13T23:53:03.247Z
+modified: 2026-05-03T14:22:23.221Z
 ---
 
 **1. Talk in terms of progress + outcomes**

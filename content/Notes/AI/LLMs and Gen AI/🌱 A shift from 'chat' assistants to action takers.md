@@ -1,7 +1,7 @@
 ---
 publish: true
-created: 2026-05-03T16:55:49.070+01:00
-modified: 2026-05-03T16:55:49.070+01:00
+created: 2026-05-03T15:55:49.070Z
+modified: 2026-05-03T15:55:49.070Z
 ---
 
 LLMs have traditionally been chat assistants - responding to prompts with the requested generated output (e.g text or images) or giving advice to the user to follow.

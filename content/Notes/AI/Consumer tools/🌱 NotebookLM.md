@@ -1,7 +1,7 @@
 ---
 publish: true
-created: 2026-05-03T16:55:49.163+01:00
-modified: 2026-05-03T16:55:49.163+01:00
+created: 2026-05-03T15:55:49.163Z
+modified: 2026-05-03T15:55:49.163Z
 ---
 
 A major feature of NotebookLM, from Google, is that it only uses the provided sources to answer questions. This can reduce hallucinations and improve the relevancy of responses.

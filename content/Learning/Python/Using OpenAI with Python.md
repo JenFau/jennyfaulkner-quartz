@@ -1,8 +1,10 @@
 ---
 publish: true
-created: 2026-05-03T16:55:49.260+01:00
-modified: 2026-06-03T07:23:15.618+01:00
+created: 2026-05-03T15:55:49.260Z
+modified: 2026-06-03T08:38:35.187Z
 ---
+
+## Install OpenAI python library
 
 To install the OpenAI Python library and `python-dotenv` for secure key management:
 
@@ -12,29 +14,25 @@ To install the OpenAI Python library and `python-dotenv` for secure key manageme
 
 See [[Protecting API keys]]
 
----
-
-With OpenAI library v 0.27.0
+## Load environment variables
 
 ```python
-def get_completion(prompt, model="gpt-3.5-turbo"):
-    messages = [{"role": "user", "content": prompt}]
-    response = openai.ChatCompletion.create(
-        model=model,
-        messages=messages,
-        temperature=0, # this is the degree of randomness of the model's output 
-    )
-    return response.choices[0].message["content"]
+from dotenv import load_dotenv
+import os
+import openai
+
+load_dotenv()
+openai.api_key = os.getenv("OPENAI_API_KEY")
 ```
 
-With OpenAI library v 1.0.0
+## OpenAI library v 1.0.0
 
 ```python
-client = openai.OpenAI()
+openai = OpenAI()
 
 def get_completion(prompt, model="gpt-3.5-turbo"):
     messages = [{"role": "user", "content": prompt}]
-    response = client.chat.completions.create(
+    response = openai.chat.completions.create(
         model=model,
         messages=messages,
         temperature=0
@@ -42,12 +40,10 @@ def get_completion(prompt, model="gpt-3.5-turbo"):
     return response.choices[0].message.content
 ```
 
----
-
-Simple prompting
+## Simple prompting
 
 ```python
-response = get_completion("The capital for France is")
+response = get_completion("The capital of France is")
     print(response)
 ```
 
@@ -57,7 +53,9 @@ If wanting to work with the characters in a string (e.g. counting the 'r's in ra
 response = get_completion("How many 'r's are there in r-a-s-b-e-r-r-y")
 ```
 
-You can separate the prompts or messages for system, user and assistant. System messages are 'You are a \[role]'; user messages are the instructions. You can use assistant messages to let ChatGPT know what it had previously said if you wanted to continue the conversation, although this is not shown below.
+## Separating the prompts
+
+You can separate the prompts or messages for system, user and assistant. System messages are 'You are a \[role]'; user messages are the instructions.
 
 ```python
 def get_completion_from_messages(messages, 
@@ -86,7 +84,46 @@ print(response)
 
 You would use the system content message to include instructions about the response, e.g. 'All responses must be one sentence long'.
 
-To monitor token use:
+## Simpler view
+
+```python
+messages = [
+	{"role": "system", "content": "You are a helpfulassistant"},
+	{"role": "user", "content": "What is 2 + 2?"}
+]
+
+response = openai.chat.completions.create(model="gpt-4.1-nano", messages=messages)
+response.choices[0].message.content
+```
+
+## Another example
+
+```python
+
+system_prompt = """
+You are a very helpful assistant
+"""
+user_prompt = """
+Why is AI so popular?
+"""
+
+# Make the mesages list
+messages = [
+	{"role": "system", "content": system_prompt},
+	{"role": "user", "content": user_prompt}
+]
+
+# Call the API
+response = openai.chat.completions.create(
+	model="gpt-5-nano",
+	messages=messages
+)
+
+# Display the response 
+display(Markdown(response.choices[0].message.content))
+```
+
+## To monitor token use:
 
 ```python
 def get_completion_and_token_count(messages, 
@@ -130,4 +167,6 @@ print(response)
 print(token_dict)
 ```
 
-Source: [Building Systems with the ChatGPT API](https://learn.deeplearning.ai/courses/chatgpt-building-system/lesson/k0pk1/introduction)
+Sources:
+[Building Systems with the ChatGPT API](https://learn.deeplearning.ai/courses/chatgpt-building-system/lesson/k0pk1/introduction)
+Ed Donner's LLM engineering course, Udemy

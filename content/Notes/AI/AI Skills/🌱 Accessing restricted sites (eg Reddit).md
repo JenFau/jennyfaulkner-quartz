@@ -1,7 +1,7 @@
 ---
 publish: true
-created: 2026-05-03T16:55:48.988+01:00
-modified: 2026-05-03T16:55:48.989+01:00
+created: 2026-05-03T15:55:48.988Z
+modified: 2026-05-03T15:55:48.989Z
 ---
 
 A challenge that I run across fairly frequently when using n8n to gather information for me is the difficulty of accessing certain sites, for example Reddit.
