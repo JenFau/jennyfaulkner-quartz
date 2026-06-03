@@ -90,6 +90,11 @@ export default ((opts?: Partial<FolderContentOptions>) => {
         .filter((page) => page !== undefined) ?? []
     const cssClasses: string[] = fileData.frontmatter?.cssclasses ?? []
     const classes = cssClasses.join(" ")
+
+    const notes = allPagesInFolder.filter((p) => (p.frontmatter as any)?.type === "note")
+    const projects = allPagesInFolder.filter((p) => (p.frontmatter as any)?.type === "project")
+    const hasTypedPages = notes.length > 0 || projects.length > 0
+
     const listProps = {
       ...props,
       sort: options.sort,
@@ -113,9 +118,26 @@ export default ((opts?: Partial<FolderContentOptions>) => {
               })}
             </p>
           )}
-          <div>
-            <PageList {...listProps} />
-          </div>
+          {hasTypedPages ? (
+            <div>
+              {notes.length > 0 && (
+                <div>
+                  <h2>Notes</h2>
+                  <PageList {...listProps} allFiles={notes} />
+                </div>
+              )}
+              {projects.length > 0 && (
+                <div>
+                  <h2>Projects</h2>
+                  <PageList {...listProps} allFiles={projects} />
+                </div>
+              )}
+            </div>
+          ) : (
+            <div>
+              <PageList {...listProps} />
+            </div>
+          )}
         </div>
       </div>
     )
