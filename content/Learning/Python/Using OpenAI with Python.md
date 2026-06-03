@@ -1,7 +1,7 @@
 ---
 publish: true
 created: 2026-05-03T16:55:49.260+01:00
-modified: 2026-05-03T16:55:49.260+01:00
+modified: 2026-06-03T07:13:11.696+01:00
 ---
 
 To install the OpenAI Python library:
@@ -59,20 +59,20 @@ def get_completion(prompt, model="gpt-3.5-turbo"):
 
 Simple prompting
 
-```Python
+```python
 response = get_completion("The capital for France is")
     print(response)
 ```
 
 If wanting to work with the characters in a string (e.g. counting the 'r's in raspberry), put a hyphen between each character.
 
-```Python
+```python
 response = get_completion("How many 'r's are there in r-a-s-b-e-r-r-y")
 ```
 
 You can separate the prompts or messages for system, user and assistant. System messages are 'You are a \[role]'; user messages are the instructions. You can use assistant messages to let ChatGPT know what it had previously said if you wanted to continue the conversation, although this is not shown below.
 
-```Python
+```python
 def get_completion_from_messages(messages, 
                                  model="gpt-3.5-turbo", 
                                  temperature=0, 
@@ -86,7 +86,7 @@ def get_completion_from_messages(messages,
     return response.choices[0].message["content"]
 ```
 
-```Python
+```python
 messages =  [  
 {'role':'system', 
  'content':"""You are an assistant who responds in the style of Miss Piggy."""},    
@@ -101,7 +101,7 @@ You would use the system content message to include instructions about the respo
 
 To monitor token use:
 
-```Python
+```python
 def get_completion_and_token_count(messages, 
                                    model="gpt-3.5-turbo", 
                                    temperature=0, 
@@ -125,7 +125,7 @@ def get_completion_and_token_count(messages,
     return content, token_dict
 ```
 
-```Python
+```python
 messages = [
 {'role':'system', 
  'content':"""You are an assistant who responds\
@@ -139,7 +139,7 @@ response, token_dict = get_completion_and_token_count(messages)
 print(response)
 ```
 
-```Python
+```python
 print(token_dict)
 ```
 

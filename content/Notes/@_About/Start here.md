@@ -4,7 +4,7 @@ created: 2025-06-12
 modified: 2025-10-27
 ---
 
-This site is based on the concept of a [[What is a digital garden?|digital garden]]. It is just my space to think and learn. There will be errors, and incomplete notes, and changes over time.
+This site is based on the concept of a [[What is a digital garden|digital garden]]. It is just my space to think and learn. There will be errors, and incomplete notes, and changes over time.
 
 This space is in part a pushback against my personal tendency to urge to wait until something is finished or perfect before sharing it. And I can capture my thoughts on the wide and ever changing range of things that my brain is interested in. When ideas and themes emerge from this thinking, the _plan_ is to create longer-form articles on [my main site](https://jennyfaulkner.com).
 
