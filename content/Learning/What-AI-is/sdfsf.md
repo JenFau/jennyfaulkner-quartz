@@ -1,8 +1,12 @@
 ---
 publish: true
-created: 2026-06-08T22:18:25.091Z
-modified: 2026-06-08T22:38:19.243Z
-published: 2026-06-08T22:38:19.243Z
+title: asdfsdf
+created:
+modified: 2026-06-08T22:39:58.072Z
+published: 2026-06-08T22:39:58.072Z
+type: note
+skill: AI Basics
+updated:
 ---
 
 this is a new notes. And what is gohng on here?
