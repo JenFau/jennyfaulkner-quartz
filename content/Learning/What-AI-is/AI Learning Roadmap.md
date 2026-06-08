@@ -1,13 +1,13 @@
 ---
 publish: true
 created:
-modified: 2026-06-08T19:58:51.567Z
-published: 2026-06-08T19:58:51.567Z
+modified: 2026-06-08T20:11:18.755Z
+published: 2026-06-08T20:11:18.755Z
 title:
 type: note
 skill:
 updated:
 ---
 
-![[AI Learning Roadmap.excalidraw]]
-Here is some text and just to check, here is some more.
+![[AI Learning Roadmap.excalidraw.svg]]
+Here is some text and just to check, here is some more. And a third bit more
