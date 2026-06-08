@@ -3,7 +3,7 @@ publish: true
 title: Choosing the Right LLM
 created: 2026-06-04
 modified: 2026-06-04
-published: 2026-06-04T19:11:17.832Z
+published: 2026-06-04T19:34:24.211Z
 type: note
 skill: LLM
 updated: 2026-06-04
@@ -36,7 +36,7 @@ The question to ask when choosing a LLM is 'what's the right model for the task?
    - Sources
      - Model cards published by providers
      - Leaderboards
-     - Arenas
+     - https://arena.ai/leaderboard/agent
    - Capabilities
      - Coding
      - Language understanding
