@@ -2,18 +2,18 @@
 publish: true
 title: Routers and abstraction layers
 created:
-modified: 2026-06-05T17:35:07.454Z
-published: 2026-06-05T17:35:07.454Z
+modified: 2026-06-09T18:28:39.632Z
+published: 2026-06-09T18:28:39.632Z
 type: note
 skill: LLMs
 updated:
 ---
 
-Both routers and abstraction layers sit between you and the model.
+Both routers and LLM abstraction layers (also called frameworks) sit between you and the model.
 
-A router decides which model or tool should handle the request. An example is OpenRouter, which can route requests to one of hundreds of different models with just one unified API. Another example is LiteLLM router.
+A router decides which model or tool should handle the request. An example is OpenRouter, which can route requests to one of hundreds of different models with just one unified API.
 
-An abstraction layer hides the difference between models, APIs and providers, allowing you to talk to one common interface. A key example is LangChain.
+LLM frameworks provide an abstraction layer over different model providers. Instead of writing separate code for every provider, you can use one framework interface and swap models more easily. Key examples are LangChain, which is heavyweight, and LiteLLM, which is more lightweight.
 
 |Concept|Main job|Analogy|
 |---|---|---|
