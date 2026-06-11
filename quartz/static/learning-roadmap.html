@@ -292,14 +292,16 @@
 
     .ic-title { font-size: 14px; color: var(--text); letter-spacing: 0.01em; }
 
-    a.ic-title {
+    .ic-notes-link {
+      font-family: "JetBrains Mono", monospace;
+      font-size: 10px;
+      color: var(--pc);
       text-decoration: none;
+      letter-spacing: 0.03em;
+      white-space: nowrap;
     }
 
-    a.ic-title:hover {
-      color: var(--pc);
-      text-decoration: underline;
-    }
+    .ic-notes-link:hover { text-decoration: underline; }
 
     .ic-toggle {
       color: var(--border);
@@ -463,15 +465,16 @@ function renderSectionPanel(s, si) {
   var itemsHtml = s.items.map(function (item, ii) {
     var n = ii < 9 ? "0" + (ii + 1) : String(ii + 1);
     var href = linkedSkills[item.title];
-    var titleHtml = href
-      ? "<a href=\"" + href + "\" class=\"ic-title\">" + esc(item.title) + "</a>"
-      : "<span class=\"ic-title\">" + esc(item.title) + "</span>";
+    var notesLink = href
+      ? "<a href=\"" + href + "\" class=\"ic-notes-link\">(View notes)</a>"
+      : "";
     return [
       "<div class=\"item-card\" data-item=\"" + ii + "\">",
         "<div class=\"ic-header\">",
           "<div class=\"ic-left\">",
             "<span class=\"ic-num\">" + n + "</span>",
-            titleHtml,
+            "<span class=\"ic-title\">" + esc(item.title) + "</span>",
+            notesLink,
           "</div>",
           "<span class=\"ic-toggle\">+</span>",
         "</div>",
@@ -522,8 +525,8 @@ function render() {
   ].join("");
 
   document.getElementById("roadmap").addEventListener("click", function (e) {
-    // Let linked titles navigate without toggling the card
-    if (e.target.closest("a.ic-title")) return;
+    // Let notes links navigate without toggling the card
+    if (e.target.closest("a.ic-notes-link")) return;
 
     // Section button
     var phaseBtn = e.target.closest(".phase-btn");
