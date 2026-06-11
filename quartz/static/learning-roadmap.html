@@ -292,6 +292,15 @@
 
     .ic-title { font-size: 14px; color: var(--text); letter-spacing: 0.01em; }
 
+    a.ic-title {
+      text-decoration: none;
+    }
+
+    a.ic-title:hover {
+      color: var(--pc);
+      text-decoration: underline;
+    }
+
     .ic-toggle {
       color: var(--border);
       font-size: 20px;
@@ -317,17 +326,6 @@
       font-style: italic;
     }
 
-    .ic-link {
-      display: inline-block;
-      margin-top: 10px;
-      font-family: "JetBrains Mono", monospace;
-      font-size: 11px;
-      color: var(--pc);
-      text-decoration: none;
-      letter-spacing: 0.03em;
-    }
-
-    .ic-link:hover { text-decoration: underline; }
 
     /* ── Responsive ── */
     @media (max-width: 600px) {
@@ -446,7 +444,7 @@ var sections = [
   }
 ];
 
-// Skills with corresponding vault pages get <a> tags on the notes link
+// Skills with vault pages: title becomes a link in the card header
 var linkedSkills = {
   "What AI is (and is not)":                        "/Learning/What-AI-is",
   "LLMs fundamentals":                              "/Learning/How-LLMs-work",
@@ -464,19 +462,20 @@ function esc(s) {
 function renderSectionPanel(s, si) {
   var itemsHtml = s.items.map(function (item, ii) {
     var n = ii < 9 ? "0" + (ii + 1) : String(ii + 1);
-    var notesLink = linkedSkills[item.title]
-      ? "<a href=\"" + linkedSkills[item.title] + "\" class=\"ic-link\">View my notes →</a>"
-      : "";
+    var href = linkedSkills[item.title];
+    var titleHtml = href
+      ? "<a href=\"" + href + "\" class=\"ic-title\">" + esc(item.title) + "</a>"
+      : "<span class=\"ic-title\">" + esc(item.title) + "</span>";
     return [
       "<div class=\"item-card\" data-item=\"" + ii + "\">",
         "<div class=\"ic-header\">",
           "<div class=\"ic-left\">",
             "<span class=\"ic-num\">" + n + "</span>",
-            "<span class=\"ic-title\">" + esc(item.title) + "</span>",
+            titleHtml,
           "</div>",
           "<span class=\"ic-toggle\">+</span>",
         "</div>",
-        "<div class=\"ic-detail\"><p>" + esc(item.detail) + "</p>" + notesLink + "</div>",
+        "<div class=\"ic-detail\"><p>" + esc(item.detail) + "</p></div>",
       "</div>"
     ].join("");
   }).join("");
@@ -523,8 +522,8 @@ function render() {
   ].join("");
 
   document.getElementById("roadmap").addEventListener("click", function (e) {
-    // Let notes links pass through
-    if (e.target.closest("a.ic-link")) return;
+    // Let linked titles navigate without toggling the card
+    if (e.target.closest("a.ic-title")) return;
 
     // Section button
     var phaseBtn = e.target.closest(".phase-btn");
